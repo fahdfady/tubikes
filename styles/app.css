@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap");
 :root {
-  --primary-color: #00C76A;
+  --primary-color: #03989e;
   --secondary-color: #2D93AD;
   --tertiary-color: #eabe7c;
   --fourth-color: #AD8E70;
@@ -11,12 +11,12 @@
 }
 
 ::-moz-selection {
-  background: #00C76A;
+  background: #00c7bd;
   color: #fff;
 }
 
 ::selection {
-  background: #00C76A;
+  background: #00c7bd;
   color: #fff;
 }
 
@@ -140,6 +140,10 @@ section {
   padding: 24px 0px;
 }
 
+section.banner {
+  padding: 6px 0px;
+}
+
 section.split {
   height: 45vh;
   display: -webkit-box;
@@ -226,6 +230,11 @@ section .layer .image img {
   font-weight: 700;
 }
 
+.section-title h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .section-title span {
   color: #f33838;
 }
@@ -257,6 +266,26 @@ button {
 button:hover, button:focus {
   background: transparent;
   color: var(--primary-color);
+}
+
+button.confirm {
+  background: #039e7c;
+  border-color: #039e7c;
+}
+
+button.confirm:hover, button.confirm:focus {
+  background: transparent;
+  color: #039e7c;
+}
+
+button.cancel {
+  background: #c65858;
+  border-color: #c65858;
+}
+
+button.cancel:hover, button.cancel:focus {
+  background: transparent;
+  color: #c65858;
 }
 
 .vl {
@@ -365,6 +394,56 @@ button:hover, button:focus {
   font-weight: 600;
 }
 
+.bikes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 22px 0px;
+}
+
+.bikes-container .bike {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.bikes-container .bike img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bikes-container .bike h2 {
+  font-size: 26px;
+}
+
+.bikes-container .bike button {
+  width: 200px;
+  height: 40px;
+  background: #666;
+  border-color: #666;
+}
+
+.bikes-container .bike button:hover, .bikes-container .bike button:focus {
+  background: transparent;
+  color: #666;
+}
+
 .form-container {
   background: #ddd;
   padding: 40px 20px;
@@ -409,6 +488,219 @@ form .text input::-ms-input-placeholder {
 
 form .text input::placeholder {
   color: #222;
+}
+
+form .input-container {
+  max-width: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+form .input-container h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+form .input-container select,
+form .input-container input {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #fff;
+  -webkit-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+}
+
+form .input-container input[type=radio] {
+  width: 20px;
+}
+
+form .input-container label img {
+  max-width: 100px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .input-container .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+form .section-title {
+  text-align: start;
+  margin-bottom: 22px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+form .data {
+  gap: 22px 0px;
+}
+
+form .data h2 {
+  font-size: 22px;
+}
+
+form .data > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+}
+
+form .buttons-container {
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+form .buttons-container button {
+  width: 250px;
+}
+
+.steps-line {
+  position: relative;
+  z-index: 1;
+  background: 0 0;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 60px 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.steps-line .the-container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.steps-line .the-container .checkout-steps {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.steps-line .the-container .checkout-steps .step-box {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 94%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-line .the-container .checkout-steps .step-box .step {
+  z-index: 99;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.steps-line .the-container .checkout-steps .step-box .step .step-number {
+  width: 45px;
+  height: 45px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  background: #e5fcf5;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 100%;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps-line .the-container .checkout-steps .step-box .step .step-title {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.steps-line .the-container .checkout-steps .step-box .step.step-active .step-number {
+  color: #fff;
+  background: #00898f;
+  border-color: var(--primary-color);
+}
+
+.steps-line .the-container .checkout-steps .step-box .step:nth-of-type(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps-line .the-container .checkout-steps .step-box .step:last-of-type {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.steps-line .the-container .checkout-steps .step-line {
+  position: relative;
+  top: 0px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 85%;
+  height: 2px;
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+  vertical-align: baseline;
 }
 
 footer {
