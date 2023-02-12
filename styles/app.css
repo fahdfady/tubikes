@@ -339,7 +339,6 @@ button.cancel:hover, button.cancel:focus {
 
 .text input {
   background: transparent;
-  line-height: 2;
   width: 100%;
 }
 
@@ -492,6 +491,7 @@ form .text input::placeholder {
 
 form .input-container {
   max-width: 560px;
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +517,7 @@ form .input-container input {
   padding: 8px 10px;
   border-radius: 4px;
   border: 1px solid #bbb;
-  background: #fff;
+  background: transparent;
   -webkit-transition: .1s all ease-in-out;
   transition: .1s all ease-in-out;
 }
@@ -549,9 +549,10 @@ form .input-container .radio-container {
 form .section-title {
   text-align: start;
   margin-bottom: 22px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+form .section-title h3 {
+  text-align: center;
 }
 
 form .data {
@@ -584,6 +585,22 @@ form .buttons-container {
 
 form .buttons-container button {
   width: 250px;
+}
+
+.two-inputs-form form {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.two-inputs-form form .text {
+  width: calc(50% - 22px);
+}
+
+.two-inputs-form form > * {
+  width: 100%;
+  text-align: center;
 }
 
 .steps-line {

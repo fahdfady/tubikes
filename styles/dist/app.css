@@ -242,7 +242,6 @@ button.cancel:hover, button.cancel:focus {
 }
 .text input {
   background: transparent;
-  line-height: 2;
   width: 100%;
 }
 .text i {
@@ -335,6 +334,7 @@ form .text input::placeholder {
 }
 form .input-container {
   max-width: 560px;
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -352,7 +352,7 @@ form .input-container input {
   padding: 8px 10px;
   border-radius: 4px;
   border: 1px solid #bbb;
-  background: #fff;
+  background: transparent;
   transition: 0.1s all ease-in-out;
 }
 form .input-container input[type=radio] {
@@ -372,7 +372,9 @@ form .input-container .radio-container {
 form .section-title {
   text-align: start;
   margin-bottom: 22px;
-  align-items: flex-start;
+}
+form .section-title h3 {
+  text-align: center;
 }
 form .data {
   gap: 22px 0px;
@@ -393,6 +395,16 @@ form .buttons-container {
 }
 form .buttons-container button {
   width: 250px;
+}
+.two-inputs-form form {
+  flex-direction: row;
+}
+.two-inputs-form form .text {
+  width: calc(50% - 22px);
+}
+.two-inputs-form form > * {
+  width: 100%;
+  text-align: center;
 }
 
 .steps-line {
