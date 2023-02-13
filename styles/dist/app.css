@@ -105,6 +105,10 @@ header ul li a:hover {
   color: var(--fourth-color);
 }
 
+main.page-body {
+  position: relative;
+}
+
 section {
   padding: 24px 0px;
 }
@@ -488,6 +492,34 @@ form .buttons-container button {
   margin: 0 auto;
   border: 1px solid var(--primary-color);
   vertical-align: baseline;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: #e9ebe9;
+  width: 220px;
+}
+.sidebar ul {
+  flex-direction: column;
+}
+.sidebar ul li a {
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: 0.12s all ease-in-out;
+}
+.sidebar ul li a:hover, .sidebar ul li a:focus {
+  background: #000;
+  color: #fff;
+}
+.sidebar ul li.active a {
+  background: #c3cbc3;
 }
 
 footer {
