@@ -196,7 +196,7 @@ section.split .splitter-container h1 {
   max-width: 260px;
 }
 
-section.report .side-section {
+section.report .side-profile {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,12 +216,102 @@ section.report .side-section {
   gap: 22px;
 }
 
-section.report .side-section img {
+section.report .side-profile img {
   max-width: 340px;
 }
 
 section.report textarea {
   min-height: 250px;
+}
+
+section.profile .side-profile {
+  background: #ddd;
+  padding: 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+section.profile .side-profile img.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #fff;
+}
+
+section.profile .side-profile h2 {
+  font-size: 20px;
+}
+
+section.profile .side-profile .username {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+section.profile .side-profile hr {
+  width: 100%;
+  margin: 6px 0px;
+}
+
+section.profile .side-profile .profile-info {
+  width: 100%;
+  font-weight: 500;
+  padding: 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+section.profile .side-profile .profile-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4px;
+}
+
+section.profile .form-container {
+  min-height: 500px;
+}
+
+section.profile nav ul {
+  gap: 18px;
+}
+
+section.profile nav ul li a {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section.profile nav ul li.active a {
+  border-bottom: 5px solid var(--secondary-color);
 }
 
 section .layer {
