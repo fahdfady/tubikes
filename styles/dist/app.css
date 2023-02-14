@@ -46,12 +46,20 @@ ul {
 .row {
   margin: 0;
 }
+.row.container {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
   font-size: 16px;
   font-family: "Tajawal", sans-serif;
   line-height: 1.2;
   background: #f9f9fc;
+}
+
+textarea {
+  font-family: "Tajawal", sans-serif;
 }
 
 .page-container {
@@ -138,6 +146,21 @@ section.split .splitter-container h1 {
   font-size: 48px;
   font-weight: 700;
   max-width: 260px;
+}
+section.report .side-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+section.report .side-section img {
+  max-width: 340px;
+}
+section.report textarea {
+  min-height: 250px;
 }
 section .layer {
   height: 180px;
@@ -233,7 +256,8 @@ button.cancel:hover, button.cancel:focus {
 }
 .text input,
 .text i,
-.text button {
+.text button,
+.text textarea {
   height: 100%;
   border: none;
   padding: 10px;
@@ -244,7 +268,8 @@ button.cancel:hover, button.cancel:focus {
   justify-content: center;
   align-items: center;
 }
-.text input {
+.text input,
+.text textarea {
   background: transparent;
   width: 100%;
 }

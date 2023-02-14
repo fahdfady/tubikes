@@ -63,6 +63,11 @@ ul {
 
 .row {
     margin: 0;
+
+    &.container {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 body {
@@ -70,6 +75,10 @@ body {
     font-family: 'Tajawal', sans-serif;
     line-height: 1.2;
     background: #f9f9fc;
+}
+
+textarea {
+    font-family: 'Tajawal', sans-serif;
 }
 
 .page-container {
@@ -173,6 +182,24 @@ section {
                 font-weight: 700;
                 max-width: 260px;
             }
+        }
+    }
+
+    &.report {
+        .side-section {
+            text-align: center;
+            @include centerAll();
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 22px;
+
+            img {
+                max-width: 340px;
+            }
+        }
+
+        textarea {
+            min-height: 250px;
         }
     }
 
@@ -287,7 +314,8 @@ button {
 
     input,
     i,
-    button {
+    button,
+    textarea {
         height: 100%;
         border: none;
         padding: 10px;
@@ -297,7 +325,8 @@ button {
         @include centerAll();
     }
 
-    input {
+    input,
+    textarea {
         background: transparent;
         // line-height: 1;
         width: 100%;
@@ -495,7 +524,6 @@ form {
     }
 }
 
-
 .steps-line {
     position: relative;
     z-index: 1;
@@ -600,6 +628,7 @@ form {
     right: 10px;
     background: #e9ebe9;
     width: 220px;
+
     ul {
         flex-direction: column;
 
