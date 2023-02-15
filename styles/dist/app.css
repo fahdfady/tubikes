@@ -417,9 +417,11 @@ form .text {
 form .text input::placeholder {
   color: #222;
 }
+form .container .text {
+  margin: 24px 0px;
+}
 form .input-container {
   max-width: 560px;
-  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: baseline;

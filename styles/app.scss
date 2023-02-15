@@ -506,9 +506,13 @@ form {
         }
     }
 
+    .container .text {
+        margin: 24px 0px;
+    }
+
     .input-container {
         max-width: 560px;
-        background-color: #eee;
+        // background-color: #eee;
         // padding: 28px 8px;
         @include centerX();
         align-items: baseline;
@@ -596,6 +600,8 @@ form {
             text-align: center;
         }
     }
+
+
 }
 
 .steps-line {
