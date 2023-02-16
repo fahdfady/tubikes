@@ -112,6 +112,18 @@ header ul li a {
 header ul li a:hover {
   color: var(--fourth-color);
 }
+header button.menu-activate {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 28px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  transition: 0.1s all ease-in-out;
+}
 
 main.page-body {
   position: relative;
@@ -363,6 +375,11 @@ button.cancel:hover, button.cancel:focus {
   font-size: 22px;
   font-weight: 600;
 }
+.services-container .service img {
+  width: 140px;
+  height: 120px;
+  object-fit: cover;
+}
 
 .bikes-container {
   display: flex;
@@ -492,6 +509,16 @@ form .buttons-container button {
 .two-inputs-form form > * {
   width: 100%;
   text-align: center;
+}
+
+.side-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.side-section img {
+  max-width: 100%;
 }
 
 .steps-line {
@@ -665,4 +692,77 @@ footer strong {
 }
 footer img {
   width: 160px;
+}
+@media (max-width: 1024px) {
+  section .layer {
+    padding: 0;
+  }
+  section .layer .image img {
+    height: 160px;
+  }
+  section.split .splitter-container {
+    width: 98%;
+  }
+  section.split .splitter-container h1 {
+    font-size: 28px;
+  }
+  section.split .splitter-container h2 {
+    font-size: 24px;
+  }
+
+  .section-title h1 {
+    font-size: 42px;
+  }
+
+  .services-container .service {
+    width: calc(33% - 4px);
+  }
+  .services-container .service i {
+    font-size: 55px;
+  }
+  .services-container .service h2 {
+    font-size: 20px;
+  }
+  .services-container .service img {
+    width: 110px;
+    height: 90px;
+  }
+}
+@media (max-width: 768px) {
+  header.page-header .hamburger-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header.page-header nav {
+    justify-content: space-between;
+  }
+  header.page-header nav ul {
+    opacity: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+    position: absolute;
+    width: 100%;
+    background: var(--primary-color);
+    top: 100px;
+    border-radius: 6px;
+  }
+  header.page-header nav ul li a {
+    font-size: 24px;
+    color: #000;
+  }
+  header.page-header nav ul li a:hover {
+    color: #bd7e09;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+  footer img {
+    width: 110px;
+  }
 }

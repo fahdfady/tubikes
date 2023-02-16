@@ -142,6 +142,21 @@ header {
             }
         }
     }
+
+
+    button.menu-activate {
+        // display: none;
+        background: var(--primary-color);
+        color: #fff;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 6px;
+        font-size: 28px;
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        transition: .1s all ease-in-out;
+    }
 }
 
 main.page-body {
@@ -441,6 +456,12 @@ button {
             font-size: 22px;
             font-weight: 600;
         }
+
+        img {
+            width: 140px;
+            height: 120px;
+            object-fit: cover;
+        }
     }
 }
 
@@ -602,6 +623,15 @@ form {
     }
 
 
+}
+
+.side-section {
+    @include centerAll();
+    flex-direction: column;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .steps-line {
@@ -811,5 +841,104 @@ footer {
 
     .vl {
         // height: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    section {
+        .layer {
+            padding: 0;
+
+            .image {
+                img {
+                    height: 160px;
+                }
+            }
+        }
+
+        &.split {
+
+            .splitter-container {
+                width: 98%;
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+    .services-container {
+        .service {
+            width: calc(33% - 4px);
+
+            i {
+                font-size: 55px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            img {
+                width: 110px;
+                height: 90px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    header.page-header {
+
+        .hamburger-button {
+            @include centerAll();
+        }
+
+        nav {
+            justify-content: space-between;
+
+            ul {
+                opacity: 0;
+                padding: 20px;
+                @include centerAll();
+                flex-direction: column;
+                gap: 28px;
+                position: absolute;
+                width: 100%;
+                background: var(--primary-color);
+                top: 100px;
+                border-radius: 6px;
+
+                li {
+                    a {
+                        font-size: 24px;
+                        color: #000;
+
+                        &:hover {
+                            color: #bd7e09;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: 18px;
+
+        img {
+            width: 110px;
+        }
     }
 }

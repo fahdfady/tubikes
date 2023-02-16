@@ -145,6 +145,24 @@ header ul li a:hover {
   color: var(--fourth-color);
 }
 
+header button.menu-activate {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 28px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  -webkit-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
+}
+
 main.page-body {
   position: relative;
 }
@@ -526,6 +544,13 @@ button.cancel:hover, button.cancel:focus {
   font-weight: 600;
 }
 
+.services-container .service img {
+  width: 140px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .bikes-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,6 +762,26 @@ form .buttons-container button {
 .two-inputs-form form > * {
   width: 100%;
   text-align: center;
+}
+
+.side-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.side-section img {
+  max-width: 100%;
 }
 
 .steps-line {
@@ -996,5 +1041,94 @@ footer strong {
 
 footer img {
   width: 160px;
+}
+
+@media (max-width: 1024px) {
+  section .layer {
+    padding: 0;
+  }
+  section .layer .image img {
+    height: 160px;
+  }
+  section.split .splitter-container {
+    width: 98%;
+  }
+  section.split .splitter-container h1 {
+    font-size: 28px;
+  }
+  section.split .splitter-container h2 {
+    font-size: 24px;
+  }
+  .section-title h1 {
+    font-size: 42px;
+  }
+  .services-container .service {
+    width: calc(33% - 4px);
+  }
+  .services-container .service i {
+    font-size: 55px;
+  }
+  .services-container .service h2 {
+    font-size: 20px;
+  }
+  .services-container .service img {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.page-header .hamburger-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.page-header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header.page-header nav ul {
+    opacity: 0;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 28px;
+    position: absolute;
+    width: 100%;
+    background: var(--primary-color);
+    top: 100px;
+    border-radius: 6px;
+  }
+  header.page-header nav ul li a {
+    font-size: 24px;
+    color: #000;
+  }
+  header.page-header nav ul li a:hover {
+    color: #bd7e09;
+  }
+  footer {
+    font-size: 18px;
+  }
+  footer img {
+    width: 110px;
+  }
 }
 /*# sourceMappingURL=app.css.map */
